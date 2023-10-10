@@ -213,6 +213,10 @@ img {
 .first-section {
   padding: 188px 0 188px;
   background-color: var(--brand-color);
+  background-image: url("../images/hw4/people-office.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .first-section > .container {
   display: flex;
@@ -337,6 +341,7 @@ img {
 .container-portfolio .list {
   display: flex;
 }
+
 .buttons {
   gap: 24px;
   margin-bottom: 72px;
@@ -350,6 +355,12 @@ img {
   border-radius: 4px;
   border: 1px solid#e7e9fc;
   background: #f4f4fd;
+}
+.buttons .button:hover,
+.buttons .button:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .button:hover {
   color: #ffffff;
@@ -371,6 +382,12 @@ img {
 .menu-li {
   width: calc((100% - 48px) / 3);
 }
+.menu-li:hover,
+.menu-li:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
 .description {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
@@ -385,4 +402,6 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+}
+.first-icons {
 }
