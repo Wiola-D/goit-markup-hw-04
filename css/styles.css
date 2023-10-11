@@ -189,6 +189,8 @@ img {
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -213,10 +215,16 @@ img {
 .first-section {
   padding: 188px 0 188px;
   background-color: var(--brand-color);
-  background-image: url("../images/hw4/people-office.jpg");
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/hw4/people-office.jpg");
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  max-width: 1440px;
 }
 .first-section > .container {
   display: flex;
@@ -403,12 +411,41 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
-.list-box > svg {
+.first-icons {
   background-color: var(--grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 .social-media-icons {
   list-style: none;
   gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media {
+  width: 40px;
+  height: 40px;
+}
+.social-links {
+  width: 100%;
+  height: 100%;
+  background-color: var(--logo-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-links:hover,
+.social-links:focus {
+  background-color: #404bbf;
+}
+.svg-s-l {
+  fill: var(--grey);
 }
 .customers-list {
   display: flex;
