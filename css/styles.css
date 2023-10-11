@@ -477,11 +477,11 @@ img {
   fill: currentColor;
 }
 
-.footer {
+.footer-container {
   display: flex;
   align-items: baseline;
 }
-.footer-container {
+.footer-first-container {
   gap: 120px;
 }
 .title-social-media {
