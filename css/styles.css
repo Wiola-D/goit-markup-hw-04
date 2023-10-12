@@ -389,9 +389,11 @@ img {
 .menu-li {
   width: calc((100% - 48px) / 3);
 }
+.link-portfolio {
+  display: block;
+}
 .link-portfolio:hover,
 .link-portfolio:focus {
-  display: block;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -482,7 +484,8 @@ img {
   align-items: baseline;
 }
 .footer-first-container {
-  gap: 120px;
+  width: auto;
+  margin-right: 120px;
 }
 .title-social-media {
   color: #fff;
@@ -490,7 +493,7 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
 .social-media-list {
